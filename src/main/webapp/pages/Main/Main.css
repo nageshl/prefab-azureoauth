@@ -1,0 +1,8 @@
+.wm-app .azure-login-btn.btn, .wm-app .azure-login-btn.btn:hover {
+    background-color: #03a9f5;
+    color: #fff;
+}
+.azure-login-btn.btn .btn-caption:not(:empty) {
+    border-left: 0.5px solid rgba(255, 255, 255, 0.34);
+    padding-left: 5px;
+}

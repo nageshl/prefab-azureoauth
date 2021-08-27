@@ -1,0 +1,141 @@
+{
+  "description" : null,
+  "methods" : {
+    "callback" : [ {
+      "url" : {
+        "value" : "/callback",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "request" : {
+          "name" : {
+            "value" : "request",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "response" : {
+          "name" : {
+            "value" : "response",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ],
+    "getAccessToken" : [ {
+      "url" : {
+        "value" : "/accessToken",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "request" : {
+          "name" : {
+            "value" : "request",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ],
+    "getCallbackURL" : [ {
+      "url" : {
+        "value" : "/callbackURL",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "request" : {
+          "name" : {
+            "value" : "request",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ],
+    "getLoginURL" : [ {
+      "url" : {
+        "value" : "/loginURl",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "request" : {
+          "name" : {
+            "value" : "request",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "state" : {
+          "name" : {
+            "value" : "state",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ]
+  }
+}

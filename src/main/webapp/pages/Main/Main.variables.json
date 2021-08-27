@@ -1,0 +1,89 @@
+{
+  "AzureGetAccessToken" : {
+    "_id" : "wm-AzureGetAccessToken-wm.ServiceVariable-1619431801046",
+    "name" : "AzureGetAccessToken",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "string",
+    "service" : "AzureOAuthHandlerService",
+    "operation" : "getAccessToken",
+    "operationId" : "AzureOauthHandlerController_getAccessToken",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "AzureGetAccessTokenonSuccess(variable, data, options)",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "AzureOauthHandler",
+    "spinnerContext" : "page"
+  },
+  "AzureGetLoginURL" : {
+    "_id" : "wm-AzureGetLoginURL-wm.ServiceVariable-1619431241249",
+    "name" : "AzureGetLoginURL",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "string",
+    "service" : "AzureOAuthHandlerService",
+    "operation" : "getLoginURL",
+    "operationId" : "AzureOauthHandlerController_getLoginURL",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "AzureGetLoginURLonSuccess(variable, data, options)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "AzureOauthHandler"
+  },
+  "loginSuccess" : {
+    "_id" : "wm-loginSuccess-wm.NotificationVariable-1619505351726",
+    "name" : "loginSuccess",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "bind:loginsuccessmessage",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "3000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Success",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

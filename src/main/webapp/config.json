@@ -1,0 +1,106 @@
+{
+  "displayName" : "AzureOAuth",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/windows-icon-updated.jpg",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ ]
+  },
+  "properties" : {
+    "accesstoken" : {
+      "type" : "string",
+      "displayName" : "",
+      "description" : "Access Token",
+      "bindable" : "out-bound",
+      "value" : "bind:Variables.AzureGetAccessToken.dataSet.value",
+      "widget" : "string",
+      "show" : false,
+      "showAt" : "",
+      "disabled" : true
+    },
+    "loginmode" : {
+      "type" : "list",
+      "displayName" : "Loginmode",
+      "description" : "Login Mode",
+      "bindable" : "",
+      "value" : "manual",
+      "widget" : "list",
+      "options" : [ "auto", "manual" ],
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "buttoncaption" : {
+      "type" : "string",
+      "displayName" : "Button Caption",
+      "description" : "This property sets the caption onto the azure login button.",
+      "bindable" : "in-bound",
+      "value" : "bind:'Login with Azure AD'",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "buttonclass" : {
+      "type" : "string",
+      "displayName" : "Button Class",
+      "description" : "This property sets the custom class onto the azure ogin button",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "callbackurl" : {
+      "type" : "string",
+      "displayName" : "Callback URL",
+      "description" : "Callback URL",
+      "bindable" : "out-bound",
+      "widget" : "string",
+      "show" : false,
+      "showAt" : "",
+      "disabled" : true
+    },
+    "authorizationheader" : {
+      "type" : "string",
+      "displayName" : "Requires Header",
+      "description" : "Auth Header",
+      "bindable" : "out-bound",
+      "value" : "bind:'Bearer '+ accesstoken",
+      "widget" : "string",
+      "show" : false,
+      "showAt" : "",
+      "disabled" : true
+    },
+    "loginsuccessmessage" : {
+      "type" : "string",
+      "displayName" : "Success Message",
+      "description" : "This property will set the text for the toaster after successful authorization",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    }
+  },
+  "events" : {
+    "onLoginurlfetch" : {
+      "description" : "Callback action after login url being fetched",
+      "eventData" : "",
+      "displayName" : ""
+    },
+    "onAccesstokenfetch" : {
+      "description" : "Callback action on successful fetch of accesstoken",
+      "eventData" : "",
+      "displayName" : ""
+    }
+  },
+  "methods" : {
+    "login" : {
+      "description" : "method for azure login",
+      "parameters" : [ ],
+      "returnType" : "any",
+      "example" : ""
+    }
+  }
+}

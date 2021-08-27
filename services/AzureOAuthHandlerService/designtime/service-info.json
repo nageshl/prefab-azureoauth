@@ -1,0 +1,7 @@
+{
+  "id" : "AzureOAuthHandlerService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.azureoauth.azureoauthhandlerservice" ],
+  "serviceClassNames" : [ "com.azureoauth.azureoauthhandlerservice.AzureOAuthHandlerService" ],
+  "title" : "AzureOAuthHandlerService"
+}
